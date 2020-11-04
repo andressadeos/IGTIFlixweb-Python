@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGTIFlix</title>
+
+    <link href="{% static 'css/principal.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/menu.css'%}" rel="stylesheet" type="text/css">
+</head>
+<body>
+      {% include "../menu.html" %}
+    <div class="conteiner-center">
+        <span>
+            {% if serie_records %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Série</th>
+                        <th>Clique para alterar</th>
+                        <th>Clique para excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for  serie in serie_records %}
+                    <tr>
+                        <td>{{serie.name}}</td>
+                        <td><button class="list-button" id="editar-button" onclick="updateItem({{serie.id}})">Alterar</button></td>
+                        <td><button class="list-button" id="apagar-button" onclick="deleteItem({{serie.id}})">Excluir</button></td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+
+
+            </table>
+
+        </span>
+    </div>
+</body>
+</html>

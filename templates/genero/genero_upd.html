@@ -1,0 +1,27 @@
+<!Doctype html>
+{% load static %}
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <title>IGTIFlix</title>
+
+    <link href="{% static 'css/menu.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/crud.css'%}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+{% include "../menu.html"%}
+    <main>
+        <div class="conteiner">
+            <div>
+                <form onsubmit="/genero" id="form-genero" method="post">
+                    {{form}}
+                    {% csrf_token %}
+                    <input type="submit" id="submit-button" value="Alterar"/>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

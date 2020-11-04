@@ -1,0 +1,63 @@
+form {
+    margin: 30px;
+}
+
+form label {
+    display: inline;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em;
+
+}
+
+#submit-button {
+    background: #28c997;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#submit-button:hover {
+    background: #00a293;
+    font-weight: bolder;
+
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+table {
+    margin: 30px;
+    text-align: center;
+}
+
+thead {
+    background: #28c997;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+.list-button {
+    border: none;
+    border-radius: 5px;
+    padding: 1px 10px;
+    font-size: 1em;
+}
+
+#apagar-button {
+    background: mediumslateblue;
+}
+
+#editar-button {
+    background: darkseagreen;
+}
