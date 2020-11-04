@@ -1,2 +1,2 @@
 # IGTIFlixweb-Python
-Repositório do projeto Python - módulo III instituição IGTI
+Repositório do projeto bootcamp Python - módulo III instituição IGTI.
