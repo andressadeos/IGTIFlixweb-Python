@@ -6,7 +6,7 @@
     <title>IGTIFlix</title>
     <link href="{% static 'css/reset.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'css/menu.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'css/genero.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/crud.css' %}" rel="stylesheet" type="text/css">
 
 
 </head>
@@ -28,7 +28,7 @@
             <tbody>
             {% for serie in serie_records %}
             <tr>
-                <td>{{serie.nome}}</td>
+                <td>{{serie.name}}</td>
                 <td><button class="list-button editar-button" onclick="updateItem({{serie.id}})">Alterar</button></td>
                 <td><button class="list-button apagar-button" onclick="deleteItem({{serie.id}})">Excluir</button></td>
 
